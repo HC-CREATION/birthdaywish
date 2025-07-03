@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Sanchita 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: radial-gradient(circle at top, #ffe0f0, #ffb6c1);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff007f;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .message {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    .memories {
+      margin: 2rem 0;
+    }
+
+    .media-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem;
+      justify-items: center;
+    }
+
+    .memory {
+      position: relative;
+      max-width: 220px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .media-wrapper {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 12px #ff69b4;
+      transition: transform 0.3s;
+    }
+
+    .media-wrapper:hover {
+      transform: scale(1.03);
+    }
+
+    .media-wrapper img,
+    .media-wrapper video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      display: none;
+      font-size: 0.9rem;
+      background: #fff0f5;
+      color: #d63384;
+      padding: 8px;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @media (max-width: 480px) {
+      .media-box {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .caption {
+        font-size: 0.85rem;
+      }
+    }
+
+    .cake {
+      font-size: 4rem;
+      margin: 1rem auto;
+      animation: bounce 2s infinite;
+    }
+
+    .gift-box {
+      font-size: 4rem;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.2);
+    }
+
+    .hearts::before {
+      content: '💖 💗 💓 💕 💞';
+      font-size: 2rem;
+      display: block;
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday, Sanchita 🎂💕</h1>
+    <p class="message">
+      Hey Don!! Wishing you the happiest birthday, you're truly special Dr.<br /><br />
+      You light up every room you enter, and I just want to say... I'm really sorry if I ever hurt you. <br />
+      I miss you more than words can say. I hope this little surprise makes you smile and forget the past. 💖<br /><br />
+      You're more precious to me than you know. Let's create beautiful memories again.🎁💌<br /><br />
+      Aaj tuza diwas aahe sanchu, I hope you get it my point, I really miss you yaar... This Gift is only for you..<br /><br />
+      Tuzya sangti che sarve te memories mazya kade me japun thevlet, Fakta aani fakta tuzya memories sathi.. Jevha aathvan yete tech baghto !!
+    </p>
+
+    <div class="memories">
+        <h2>Click On Images To See Memories 🎥</h2>
+        <div class="media-box">
+          <!-- All memory items (images/videos with captions) -->
+          <!-- Each memory item -->
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img10.jpg" alt="Memory 1" />
+            </div>
+            <p class="caption">Ha photo aathavla tuza tu send kela hotas !! Kiti god disteys hyat...😊</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img11.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Hyat tar me lagech olkhla hota tula.. Itki innocent disat hotis... 😅</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img1.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Ha Photo aathavtoy tula, Saree madhe tu pathavlelas mala, Hyat chandrakor lavlya mule ajun chan disat hotis... 🤗</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img3.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Aani ha photo !! kiti juna asava pan titkach god aahe... ❤️</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img4.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Aani hya blue saree cha pic !! Hyat ek lahan cute doll sarkhi disteys don... 🙂‍↔️</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img6.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Hi mirror selfie !! Hi sudha tu kadhtach mala pathavli hotis... 🙌</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img5.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Ha photo baghitla ka tuzyat la lahan baal dista jas tya lahan mulala dharlays... 🤗</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img7.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Are ha photo magun ghetlela !! Ajun sudha samjla nahi kon hota ka ghetlela ?🤧 But jyane pan ghetla ek memory dili mala... 😁</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img8.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Same ha sudha photo Magun ch ghetlela !! Tevha tu bollelis ki samorun ek sudha photo ny magun ch ghetat photo sarve... 😂</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img9.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">Aani hya shivya jya tu dyaychi ragat nasaychya aani kadhi vatla sudha nahi ki tu ragat bolteys ka premane chan ch vataych aikayla... 🤣</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <img src="Img2.jpg" alt="Memory 2" />
+            </div>
+            <p class="caption">And Finally aapla photo ghetla aapan tehi samorun Lucky chya birthday la... ❤️</p>
+          </div>
+
+          <div class="memory" onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <video controls unmuted playsinline>
+                <source src="Vid1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">Hi video tar tula mahitch asel !! One of the fav video for me... 💞</p>
+          </div>
+
+          <div class="memory"  onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <video controls unmuted playsinline>
+                <source src="Vid2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">Mini vlog by Don... 😅</p>
+          </div>
+
+          <div class="memory"  onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <video controls unmuted playsinline>
+                <source src="Vid3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">Aani hi tich mastikhor sanchita aahe jicha aaj vadh diwas aahe... 🤗</p>
+          </div>
+
+          <div class="memory"  onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <video controls unmuted playsinline>
+                <source src="Vid4.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">Pahune Jevlat ka Singer Don... 😅</p>
+          </div>
+
+          <div class="memory"  onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <video controls unmuted playsinline>
+                <source src="Vid5.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">Aani he Tam Tam var dance kadhi karnar aapan sanchu ?? Ajun pan me vaat baghtoy... 😑</p>
+          </div>
+
+          <div class="memory"  onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <video controls unmuted playsinline>
+                <source src="Vid6.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">Hi pan video mazi fav aahe... 🙂‍↔️</p>
+          </div>
+
+          <div class="memory"  onclick="toggleCaption(this)">
+            <div class="media-wrapper">
+              <video controls unmuted playsinline>
+                <source src="Vid7.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">Aata Bhandi Dhutana sudha don mastit ch rahte... 😂</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="cake">🎂</div>
+    <div class="hearts"></div><br>
+    <span><b>Click on Giftbox...</b></span>
+    <div class="gift-box" onclick="openGift()">🎁</div>
+  </div>
+
+  <div class="confetti"></div>
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3" />
+  </audio>
+
+  <script>
+
+    const audio = document.getElementById('bgMusic');
+    let isPlaying = false;
+
+    function startMusicOnce() {
+      if (!isPlaying) {
+        audio.play().catch(() => {
+
+        });
+        isPlaying = true;
+        removeListeners();
+      }
+    }
+
+    function removeListeners() {
+      document.removeEventListener('click', startMusicOnce);
+      document.removeEventListener('touchstart', startMusicOnce);
+      document.removeEventListener('scroll', startMusicOnce);
+    }
+
+    // Listen for any user interaction
+      document.addEventListener('click', startMusicOnce);
+      document.addEventListener('touchstart', startMusicOnce);
+      document.addEventListener('scroll', startMusicOnce);
+
+    function openGift() {
+      alert('🎉 Surprise! Again Happy Birthday Don... <3')
+    }
+
+    function toggleCaption(element) {
+      const caption = element.querySelector(".caption");
+      caption.style.display = caption.style.display === "block" ? "none" : "block";
+    }
+
+    document.querySelectorAll('video').forEach(video => {
+      video.addEventListener('play', function () {
+        const caption = video.closest('.memory').querySelector('.caption');
+        if (caption) caption.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
